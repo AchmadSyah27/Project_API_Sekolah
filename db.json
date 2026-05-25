@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "04b0717b-21f9-4144-8d61-cdad765361b7",
+      "username": "admin",
+      "password": "$2b$10$5UzO8EUUE7V7V40axMYAe.C7.4IJMUuf0TK6a9ADU32HWKHbGrGn.",
+      "role": "admin",
+      "created_at": "2026-05-24T03:53:47.784Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "b3be656a-48cd-4ab5-9cc7-ae29301e5f9d",
+      "nis": "2024001",
+      "name": "Budi Santoso",
+      "kelas": "X-A",
+      "jurusan": "IPA",
+      "email": "budi@sekolah.id",
+      "phone": "081234567890",
+      "jenis_kelamin": "L",
+      "tanggal_lahir": "2008-03-15",
+      "alamat": "Jl. Merdeka No.1",
+      "created_at": "2026-05-24T03:53:47.785Z",
+      "updated_at": "2026-05-24T03:53:47.785Z",
+      "created_by": "admin"
+    },
+    {
+      "id": "9e69e145-6ebd-49a9-ace4-378a1b6f7bc7",
+      "nis": "2024003",
+      "name": "Ahmad Fauzi",
+      "kelas": "X-B",
+      "jurusan": "IPS",
+      "email": "ahmad@sekolah.id",
+      "phone": "081234567892",
+      "jenis_kelamin": "L",
+      "tanggal_lahir": "2008-01-10",
+      "alamat": "Jl. Gatot Subroto No.3",
+      "created_at": "2026-05-24T03:53:47.785Z",
+      "updated_at": "2026-05-24T03:53:47.785Z",
+      "created_by": "admin"
+    },
+    {
+      "id": "121bc754-9609-4d64-9b34-0ba910cfe934",
+      "nis": "2024004",
+      "name": "Dewi Lestari",
+      "kelas": "XI-A",
+      "jurusan": "IPA",
+      "email": "dewi@sekolah.id",
+      "phone": "081234567893",
+      "jenis_kelamin": "P",
+      "tanggal_lahir": "2007-05-18",
+      "alamat": "Jl. Ahmad Yani No.4",
+      "created_at": "2026-05-24T03:53:47.785Z",
+      "updated_at": "2026-05-24T03:53:47.785Z",
+      "created_by": "admin"
+    },
+    {
+      "id": "e4067bbc-6e8a-4f4f-9ed9-09ea28b04cb3",
+      "nis": "2024005",
+      "name": "Rizky Pratama",
+      "kelas": "XI-B",
+      "jurusan": "IPS",
+      "email": "rizky@sekolah.id",
+      "phone": "081234567894",
+      "jenis_kelamin": "L",
+      "tanggal_lahir": "2007-09-30",
+      "alamat": "Jl. Diponegoro No.5",
+      "created_at": "2026-05-24T03:53:47.786Z",
+      "updated_at": "2026-05-24T03:53:47.786Z",
+      "created_by": "admin"
+    }
+  ]
+}

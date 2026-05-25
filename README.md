@@ -17,11 +17,11 @@ Proyek ini dibangun menggunakan ekosistem JavaScript modern pada sisi *backend*:
 - **Backend Framework:** Express.js
 - **Database lokal:** Lowdb / JSON-based Database (efisien untuk tahap pengembangan dan *prototyping*)
 - **Environment Management:** Dotenv (`.env`) untuk mengamankan kredensial dan konfigurasi server.
-- **Saat pembuatan repo ini, masih works pada npm versi 10.9.4 .
+- **Saat pembuatan repo ini, masih works pada npm versi 10.9.4 .**
 
 ## Cara Menjalankan Proyek di Lokal
 
-### 1. Kloning Repository
+### 1. Cloning Repository
 git clone https://github.com/username-kamu/Project_API_Sekolah.git
 cd Project_API_Sekolah https://github.com/AchmadSyah27/Project_API_Sekolah/edit/master/README.md
 
@@ -69,4 +69,3 @@ Json untuk tambah siswa baru:
 
 ## 7. Body JSON:
 Tambah
-
