@@ -209,7 +209,7 @@ app.get("/students", authMiddleware, (req, res) => {
 
 	res.json({
 		success: true,
-		message: "Data siswa berhasil diambil dengan filter dan pagination",
+		message: "Data siswa berhasil diambil",
 		data: paginated,
 		pagination: {
 			total,
