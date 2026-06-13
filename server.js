@@ -396,6 +396,45 @@ app.delete("/students/name/:name", authMiddleware, (req, res) => {
 	});
 });
 
+// 1. Tambahkan (:date) agar jalurnya dinamis
+app.delete('/students/date/:date', authMiddleware, (req, res) => {
+  
+  // 2. Ambil tanggalnya dari URL params, bukan bikin Date baru
+  const today = req.params.date; // Akan menangkap "2026-06-12" dari URL
+  
+  // Cari semua siswa yang created_at-nya sama dengan tanggal tersebut
+  const students = db.get('students')
+    .filter(s => s.created_at.startsWith(today))
+    .value();
+
+  if (!students || students.length === 0) {
+    return res.status(404).json({
+      success: false,
+      message: `Tidak ada siswa yang ditambahkan pada tanggal (${today})`
+    });
+  }
+
+  // Hapus semua yang cocok
+  db.get('students')
+    .remove(s => s.created_at.startsWith(today))
+    .write();
+
+  res.json({
+    success: true,
+    message: `${students.length} siswa yang ditambahkan pada ${today} berhasil dihapus`,
+    data: {
+      deleted_count: students.length,
+      deleted_date: today,
+      deleted_students: students.map(s => ({
+        id: s.id,
+        nis: s.nis,
+        name: s.name,
+        created_at: s.created_at
+      }))
+    }
+  });
+});
+
 // ─────────────────────────────────────────
 // START SERVER
 // ─────────────────────────────────────────
